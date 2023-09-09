@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Interior Egypt</title>
+  <link href="hours.css" rel="stylesheet">
+  <meta name="viewport" content="width =device-width, initial-scale=1">
+  <link href="IMAGES/ielogo.ico" rel="shortcut icon">
+</head>
+  <body>
+    <section id="banner">
+        <img src="IMAGES/ielogo.png" class="logo">
+      <div class="bannertxt"> 
+        <h1 style="padding-bottom: 30px;">Working Hours</h1>
+        <p style="text-align: center;">Sunday-Thursday : 10:00AM to 8:30PM <br> Friday : Closed. <br>Saturday : 10:00AM to 6:00PM</p>
+      </div>
+    </section>
+    <div id="sidenav">
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="https://www.facebook.com/EgyptInteriorGroup">FACEBOOK</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menubtn"><img src="IMAGES/mnu.png" id="menu"></div>
+
+    <script>
+      var menubtn = document.getElementById("menubtn")
+      var sidenav = document.getElementById("sidenav")
+      var menu = document.getElementById("menu")
+      sidenav.style.right = "-250px"
+      menubtn.onclick = function() {
+
+        if(sidenav.style.right == "-250px") {
+          sidenav.style.right = "0px"
+          menu.src = "IMAGES/closex.png";
+        }
+
+        else{
+          sidenav.style.right = "-250px"
+          menu.src = "IMAGES/mnu.png";
+        }
+
+      }
+    </script>
+ 
+  </body>
+</html>

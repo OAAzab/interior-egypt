@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  
+  }
+  
+  #banner {
+    background: linear-gradient(rgba(0,0,0,0.5), #0c0c0c7c) , url("IMAGES/bg.avif");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  
+  
+  .logo {
+    position: absolute;
+    height: 180px;
+    top: 3%;
+    left: 8%;
+  }
+  
+  .bannertxt {
+    text-align: center;
+    color: white;
+    padding-top: 185px;
+    
+  }
+  .bannertxt h1 {
+    font-size: 130px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+  }
+  
+  .bannertxt p {
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+  }
+  
+  .bannerbtn {
+    margin-top: 100px;
+  }
+  
+  .bannerbtn a {
+    text-decoration: none;
+    font-size: 40px;
+    padding: 10px;
+    margin: 10px;
+    border: #32baf4 solid 3px;
+    border-radius: 30px;
+    color: white;
+    background: #32baf4;
+    transition: 0.5s;
+  }
+  
+  .bannerbtn a:hover {
+    background: transparent;
+    border-color: #32baf4;
+  }
+  
+  #sidenav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    background: #32baf4;
+    transition: 0.5s;
+  }
+  
+  nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+    
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  #menubtn {
+    width: 50px;
+    height: 50px;
+    background: #32baf4;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+  }
+  
+  #menubtn img {
+    width: 20px;
+    margin-top: 15px;
+  }
+
+  a {
+    color: #51cbff;
+  }
+
+  a:hover {
+    color: #0189c3;
+  }
+  
+  @media only screen and (max-width:700px) {
+  
+    .bannertxt h1 {
+      font-size: 60px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: bold;
+    }
+    .bannertxt p {
+      font-size: 20px;
+      margin-top: 10px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+    }
+    #banner {
+      background: linear-gradient(rgba(0,0,0,0.5), #2d456d) , url("bg.avif");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      width: 100%;
+    }
+  
+    .logo {
+      position: absolute;
+      height: 120px;
+      top: 3%;
+      left: 8%;
+    }
+  
+    .bannerbtn a span {
+      width: 0;
+      height: 100%;
+      background: white;
+      z-index: -1;
+      position: absolute;
+      margin: 30px 0;
+      top: 0;
+      left: 0;
+      transition: 0.5s;
+      border-radius: 20px;
+    }
+  }
+  
